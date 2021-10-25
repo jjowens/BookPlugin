@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table {
+            width: 90%;
+        }
+
+        table th {
+            text-align: left;
+            background-color: cornflowerblue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div ng-controller="BooksPlugin.BooksController" class="wmd-panel">
+        <h2>Overview</h2>
+
+        <p>Review list of books below. They were created as part of the migration plan.</p>
+
+        <table style="width: 90%">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tr ng-repeat="book in Books">
+                <td>{{ book.BookID }}</td>
+                <td>{{ book.Title }}</td>
+                <td>{{ book.AuthorFirstName }} {{ book.AuthorLastName }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

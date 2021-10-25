@@ -1,0 +1,13 @@
+﻿If you want to add this project to an existing Visual Studio Solution like one of your Umbraco websites, 
+then you could copy those commands from below to the BookPlugin's post build event command line. 
+It copies all key files and it will ignore all files listed in the BulidEventExclude.txt
+
+# FOR COPYING INTO YOUR UMBRACO PROJECT
+
+if not exist $(SolutionDir)\App_Plugins\BooksPlugin mkdir $(SolutionDir)\App_Plugins\BooksPlugin
+xcopy "$(ProjectDir)" "$(SolutionDir)\App_Plugins\BooksPlugin" /Y /s /EXCLUDE:$(ProjectDir)BuildEventExclude.txt
+
+
+# FOR COPYING INTO YOUR RELEASE FOLDER
+
+xcopy "$(ProjectDir)" "$(SolutionDir)\App_Plugins\BooksPlugin" /Y /s /EXCLUDE:$(ProjectDir)BuildEventExclude.txt

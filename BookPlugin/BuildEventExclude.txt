@@ -1,0 +1,17 @@
+﻿\bin\
+\obj\
+\bin
+\obj
+\Properties
+\Properties\
+\packages
+\packages\
+\BuildEventExclude.txt
+\packages.config
+\web.config
+\web.debug.config
+\web.release.config
+\BooksPlugin.csproj
+\BooksPlugin.csproj.user
+\BooksPlugin.sln
+\CopyCommands.txt
