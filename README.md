@@ -7,7 +7,7 @@ This is a demo plugin created to demostrate migration plans in creating a custom
 
 1. Use this plugin in an Umbraco 8 website.
 2. Test this plugin on an isolated Umbraco website, preferably in a local Dev/Test environment
-3. You should NOT have an existing table called "Book" in your Umbraco database. If you rename the table name in the plugin to your preferred tablename.
+3. You should NOT have an existing table called "Book" in your Umbraco database. If it does exists, then rename the table name 'Book' in the migration plan inside the plugin project to your preferred tablename.
 
 ## How To Install
 
