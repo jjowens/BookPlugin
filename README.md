@@ -21,9 +21,9 @@ Repeat the above steps for any other type of users if you prefer.
 
 ## How to work with Plugin and release
 
-You can use Visual Studio Code or Community Edition 2019. If you want to create your own release of this plugin, then make your changes and copy the folder over to your App_Plugins. However, you must delete the following files/folders from your Release version, they are not needed for your release.
+You can use Visual Studio Code or Community Edition 2019. If you want to create your own release of this plugin, then make your changes and copy the folder over to your App_Plugins. However, you must delete the following files/folders from your version of the release, they are not needed.
 
-A copy of the release is already set in the Release directory.
+A copy of the release is already set in the ReleaseVersions directory.
 
 bin
 obj

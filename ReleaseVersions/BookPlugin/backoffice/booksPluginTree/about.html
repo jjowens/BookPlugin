@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>About</h2>
+
+    <p>This plugin was developed by John J. Owens <a href="https://twitter.com/jjowensdev">@jjowensdev</a> on Twitter.</p>
+
+    <h3>Concepts</h3>
+    <p>This is an example plugin demostrating the following concepts:</p>
+
+    <p>
+        <ol>
+            <li>Migration Plans - 
+            In your Umbraco database, it will create a new custom table named as "Book"" and then populate the table with new records. Those plans shows how it's done</li>
+            <li>Retrieve Data - The controller in the "api" folder shows how it uses ScopeProvider to retrieve a records from your custom table, Book</li>
+            <li>Tree Controllers - In the "trees" folder, the TreeController set up the menu items.</li>
+        </ol>
+    </p>
+
+    <h3>Reset Plugin</h3>
+
+    <p>Once a migration plan has been executed, it cannot be re-run. 
+    However, if you need to reset it for experimental or development purposes, you can re-run the migration plans.</p>
+    <p><span class="warning">Please note don't do this on a production server</span>. It could create a massive headache if something goes wrong.</p>
+    <p>To reset the migration plans, log into your Umbraco database. Look for the custom table "Book". Delete/drop the table "Book". 
+    If the table is not deleted, the migration plan will check if the table already exists</p>
+        
+    <p>Then look for the "umbracoKeyValue" table. It holds key/value records.
+        There should be a record with the key set to "Umbraco.Core.Upgrader.State+BooksPluginInit". 
+        The "BooksPluginInit" part in the key is the name of the migration plan.
+    </p>
+    <p>Delete the record with the key set to "Umbraco.Core.Upgrader.State+BooksPluginInit". That's the reset completed.</p>
+    <p>Restart your Umbraco website, it will re-create the Book table</p>
+</body>
+</html>
