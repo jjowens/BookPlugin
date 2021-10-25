@@ -26,16 +26,27 @@ You can use Visual Studio Code or Community Edition 2019. If you want to create 
 A copy of the release is already set in the ReleaseVersions directory.
 
 bin
+
 obj
+
 packages
+
 Properties
+
 BooksPlugin.csproj
+
 BooksPlugin.csproj.user
+
 BuildEvents.txt
+
 CopyCommands.txt
+
 packages.config
+
 Web.config
+
 Web.debug.config
+
 Web.release.config
 
 ## Key files
