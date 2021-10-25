@@ -23,7 +23,7 @@ Repeat the above steps for any other type of users if you prefer.
 
 You can use Visual Studio Code or Community Edition 2019. If you want to create your own release of this plugin, then make your changes and copy the folder over to your App_Plugins. However, you must delete the following files/folders from your version of the release, they are not needed.
 
-A copy of the release is already set in the ReleaseVersions directory.
+A copy of the release is available to be used in the ReleaseVersions directory.
 
 bin
 
